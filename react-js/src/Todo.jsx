@@ -1,14 +1,16 @@
 import React from 'react'
 import './App.css'
 
-export default function Todo({todo}) {
+export default function Todo({todo, handleToogleCheckbox}) {
 
-  function test() {
-    console.log('test temporary warning suppression');
+  //If im not using this function i get stuck in a render loop
+  function handleToogleCheckboxClick() {
+    handleToogleCheckbox(todo.id);
   }
+
   return (
     <label className='block'>
-      <input className='inline-block' type="checkbox" onChange={test} checked={todo.completed} />
+      <input className='inline-block' type="checkbox" onChange={handleToogleCheckboxClick} checked={todo.completed} />
       <div className='inline-block'>{todo.text}</div>
     </label>
   )

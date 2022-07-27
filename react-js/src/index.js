@@ -4,8 +4,8 @@ import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  //<React.StrictMode> om strict anropas min konstruktor två ggr
     <App />
-  </React.StrictMode>
+  //</React.StrictMode>
 );
 
