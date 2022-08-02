@@ -1,0 +1,16 @@
+För JS
+Flyttas senare till readme.md (konsol komandon)
+1: npx create-react-app .
+2: npm i uuid
+
+ 
+För TS
+1: npx create-react-app . --template typescript
+2: npm i uuid
+3: npm i @types/uuid
+ 
+För ts+vite
+1: npm create vite .
+2: npm install
+3: npm i uuid
+4: npm i @types/uuid
