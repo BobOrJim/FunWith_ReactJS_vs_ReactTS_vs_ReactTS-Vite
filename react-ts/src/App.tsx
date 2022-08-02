@@ -53,23 +53,18 @@ export const App: React.FC = (): JSX.Element => {
     }
   }
 
-  /*
-  function handleClearTodos() {
+  function handleClearTodos(): void {
     const newTodos = todos.filter((todo) => !todo.completed);
     setTodos(newTodos);
-  }*/
+  }
 
-  //<TodoList todos={todos} handleToogleCheckbox={handleToogleCheckbox} />
-  //<input ref={refTodoText} type="text" />
-  //<button onClick={handleAddTodo}>Add todo</button>
-  //<button onClick={handleClearTodos}>Clear complete</button>
-  //<div>{todos.filter((todo) => !todo.completed).length} todos left</div>
   return (
     <>
       <TodoList todos={todos} handleToogleCheckbox={handleToogleCheckbox} />
       <input ref={refTodoText} type="text" />
       <button onClick={handleAddTodo}>Add todo</button>
       <button onClick={handleClearTodos}>Clear complete</button>
+      <div>{todos.filter((todo) => !todo.completed).length} todos left</div>
     </>
   );
 };
@@ -97,3 +92,9 @@ export const App: React.FC = (): JSX.Element => {
     const newTodos = todos.filter((todo) => !todo.completed);
     setTodos(newTodos);
   }*/
+
+//<TodoList todos={todos} handleToogleCheckbox={handleToogleCheckbox} />
+//<input ref={refTodoText} type="text" />
+//<button onClick={handleAddTodo}>Add todo</button>
+//<button onClick={handleClearTodos}>Clear complete</button>
+//<div>{todos.filter((todo) => !todo.completed).length} todos left</div>
